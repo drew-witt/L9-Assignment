@@ -1,0 +1,151 @@
+/*<============================= START GRID ==============================>*/
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: #02472b;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: #e4e4e4;
+  text-align: center;
+  padding: 5px;
+  color: #1b447f;
+}
+
+/*<============================= START FLEX ==============================>*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: #03a3df;
+  padding: 10px;
+}
+
+.flex-container li {
+  display: block;
+}
+
+.flex-container img {
+  width: 225px;
+ height: 300px;
+ object-fit: cover;
+}
+  /*<============================= START FONT ==============================>*/
+
+h1 {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: .8em;
+  padding-bottom: 0;
+}
+
+h3,h4,h5,h6  {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+p {
+  font-family: "Arial Regular", sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*<============================= START NAV ==============================>*/
+
+nav.top {
+  margin: 0;
+  margin-top: 0em;
+  margin-bottom: .75em;
+}
+
+nav.top ul {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #1b447f;
+}
+
+nav.top li {
+  display: block;
+  margin: 0;
+  padding: .3em;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/*<============================= START CURSOR ==============================>*/
+
+a:link {
+  text-decoration: none;
+  color: #03a3df;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ecb722;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ecb722;
+  background-color: #03a3df;
+  padding: 0 .2em;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/*<============================= START ARTICLES ==============================>*/
+
+article.about ul {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1b447f;
+}
+
+article.about li {
+  display: block;
+  margin: 0;
+  padding: .75em;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/*<============================= START FOOTER ==============================>*/

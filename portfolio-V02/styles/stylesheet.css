@@ -1,0 +1,208 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  background-color: #02472b;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: #e4e4e4;
+  text-align: center;
+  padding: 5px;
+  color: #1b447f;
+}
+
+h1 {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: .8em;
+  padding-bottom: 0;
+}
+
+h3,h4,h5,h6  {
+  font-family: "Arial Bold", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+p {
+  font-family: "Arial Regular", sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*<============================= START HEADER ==============================>*/
+
+.header {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  opacity: 0.25;
+  top: -340px;
+  left: 48px;
+  font-size: 168px;
+  z-index: 0;
+}
+
+img.header {
+  object-fit: cover;
+  object-position: 0 30%;
+  width: 100%;
+  height: 200px;
+  z-index: 0;
+}
+
+/*<============================= START NAV ==============================>*/
+
+nav.top {
+  position: relative;
+  margin: 0;
+  margin-top: 0em;
+  margin-bottom: .75em;
+  z-index: 1;
+}
+
+nav.top ul {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #1b447f;
+}
+
+nav.top li {
+  display: block;
+  margin: 0;
+  padding: .3em;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/*<============================= START CURSOR ==============================>*/
+
+a:link {
+  text-decoration: none;
+  color: #03a3df;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ecb722;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ecb722;
+  background-color: #03a3df;
+  padding: 0 .2em;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/*<============================= START ARTICLES ==============================>*/
+
+article.about ul {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1b447f;
+}
+
+article.about li {
+  display: block;
+  margin: 0;
+  padding: .75em;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/*<============================= START FOOTER ==============================>*/
+
+.footer {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  opacity: 0.25;
+  font-size: 168px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+img.footer {
+  object-fit: cover;
+  object-position: 0 90%;
+  width: 100%;
+  height: 200px;
+
+}
+
+
+/*<============================= START MARATHON TABLE ==============================>*/
+
+#progress {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#progress td, #progress th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#progress tr:nth-child(even){
+  background-color: #f2f2f2;}
+
+#progress tr:nth-child(odd){
+    background-color: #e6e6e6;}
+
+#progress tr:hover {
+  background-color: #ddd;}
+
+#progress th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
